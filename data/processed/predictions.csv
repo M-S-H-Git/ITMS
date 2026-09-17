@@ -1,0 +1,17 @@
+scenario,lane_id,predicted_queue_length,congestion_level
+accident,east,178.957,high
+accident,north,177.165,high
+accident,south,177.071,high
+accident,west,181.802,high
+emergency,east,117.822,medium
+emergency,north,125.783,high
+emergency,south,122.793,high
+emergency,west,126.455,high
+normal,east,67.087,medium
+normal,north,66.963,medium
+normal,south,68.267,medium
+normal,west,70.565,medium
+peak,east,342.585,high
+peak,north,339.54,high
+peak,south,345.936,high
+peak,west,342.748,high

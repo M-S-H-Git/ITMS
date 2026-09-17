@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITMS Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fb; color: #18212f; }
+    header { background: #113a5c; color: white; padding: 24px 32px; }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+    .card { background: white; border: 1px solid #dde5ef; border-radius: 8px; padding: 16px; }
+    .metric { font-size: 30px; font-weight: 700; margin-top: 8px; }
+    .label { color: #56657a; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    section { margin-top: 24px; }
+    table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #dde5ef; }
+    th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #e8edf4; font-size: 13px; }
+    th { background: #edf3f9; }
+    .alert { color: #9b2c2c; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI-Enabled Intelligent Traffic Management System</h1>
+    <p>Prototype dashboard generated from simulated intersection metrics.</p>
+  </header>
+  <main>
+    <div class="grid">
+      <div class="card"><div class="label">AI Throughput</div><div class="metric">40 veh (888 veh/hr)</div></div>
+      <div class="card"><div class="label">Average Waiting Time</div><div class="metric">9.48s</div></div>
+      <div class="card"><div class="label">Max Decision Latency</div><div class="metric">0.0019s</div></div>
+      <div class="card"><div class="label">Accident Alerts</div><div class="metric alert">0</div></div>
+    </div>
+    <section>
+      <h2>Performance Summary</h2>
+      <table><thead><tr><th>scenario</th><th>controller</th><th>average_waiting_time</th><th>average_queue_length</th><th>total_throughput</th><th>max_queue_length</th><th>emergency_clearance_time_seconds</th><th>average_decision_latency_seconds</th><th>latency_under_3_seconds</th><th>accident_alert_count</th></tr></thead><tbody><tr><td>emergency</td><td>ai_controller</td><td>9.481</td><td>2.338</td><td>40</td><td>14</td><td>3</td><td>0.00037</td><td>True</td><td>0</td></tr></tbody></table>
+    </section>
+    <section>
+      <h2>Latest Congestion Predictions</h2>
+      <table><thead><tr><th>scenario</th><th>lane_id</th><th>predicted_queue_length</th><th>congestion_level</th></tr></thead><tbody><tr><td>emergency</td><td>east</td><td>3.462962962962963</td><td>low</td></tr><tr><td>emergency</td><td>north</td><td>1.9074074074074074</td><td>low</td></tr><tr><td>emergency</td><td>south</td><td>0.5185185185185185</td><td>low</td></tr><tr><td>emergency</td><td>west</td><td>3.462962962962963</td><td>low</td></tr></tbody></table>
+    </section>
+    <section>
+      <h2>Recent Control Decisions</h2>
+      <table><thead><tr><th>timestamp</th><th>selected_phase</th><th>green_duration</th><th>reason</th><th>decision_latency_seconds</th></tr></thead><tbody><tr><td>34</td><td>south</td><td>3</td><td>dqn_queue_pressure</td><td>0.000616</td></tr><tr><td>35</td><td>south</td><td>3</td><td>dqn_queue_pressure</td><td>0.000368</td></tr><tr><td>36</td><td>south</td><td>3</td><td>dqn_queue_pressure</td><td>0.000242</td></tr><tr><td>37</td><td>south</td><td>3</td><td>dqn_queue_pressure</td><td>0.000332</td></tr><tr><td>38</td><td>south</td><td>3</td><td>dqn_queue_pressure</td><td>0.000361</td></tr><tr><td>39</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000277</td></tr><tr><td>40</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.00041</td></tr><tr><td>41</td><td>north</td><td>3</td><td>dqn_policy</td><td>0.000329</td></tr><tr><td>42</td><td>north</td><td>3</td><td>emergency_priority</td><td>8.8e-05</td></tr><tr><td>43</td><td>north</td><td>3</td><td>emergency_priority</td><td>6.3e-05</td></tr><tr><td>44</td><td>north</td><td>3</td><td>emergency_priority</td><td>8.8e-05</td></tr><tr><td>45</td><td>north</td><td>3</td><td>emergency_priority</td><td>6e-05</td></tr><tr><td>46</td><td>north</td><td>3</td><td>emergency_priority</td><td>5.6e-05</td></tr><tr><td>47</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000326</td></tr><tr><td>48</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000332</td></tr><tr><td>49</td><td>north</td><td>3</td><td>dqn_policy</td><td>0.000331</td></tr><tr><td>50</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000377</td></tr><tr><td>51</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000949</td></tr><tr><td>52</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.00033</td></tr><tr><td>53</td><td>north</td><td>3</td><td>dqn_queue_pressure</td><td>0.000395</td></tr></tbody></table>
+    </section>
+    <section>
+      <h2>Emergency Vehicle Evidence</h2>
+      <table><thead><tr><th>scenario</th><th>step</th><th>lane_id</th><th>queue_length</th><th>waiting_time</th><th>vehicle_count</th><th>throughput</th><th>signal_phase</th><th>emergency_count</th><th>accident_alert</th></tr></thead><tbody><tr><td>emergency</td><td>41</td><td>west</td><td>5</td><td>40</td><td>15</td><td>0</td><td>north</td><td>1</td><td>False</td></tr><tr><td>emergency</td><td>42</td><td>west</td><td>6</td><td>36</td><td>14</td><td>1</td><td>north</td><td>1</td><td>False</td></tr><tr><td>emergency</td><td>43</td><td>west</td><td>6</td><td>39</td><td>15</td><td>0</td><td>north</td><td>1</td><td>False</td></tr><tr><td>emergency</td><td>44</td><td>west</td><td>7</td><td>37</td><td>15</td><td>0</td><td>north</td><td>1</td><td>False</td></tr><tr><td>emergency</td><td>45</td><td>west</td><td>8</td><td>35</td><td>15</td><td>0</td><td>north</td><td>1</td><td>False</td></tr></tbody></table>
+    </section>
+  </main>
+</body>
+</html>

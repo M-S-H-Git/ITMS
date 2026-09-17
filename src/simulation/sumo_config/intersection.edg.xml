@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <!-- Incoming edges (toward center) -->
+    <edge id="north" from="north_in" to="center" numLanes="3" speed="13.89"/>
+    <edge id="south" from="south_in" to="center" numLanes="3" speed="13.89"/>
+    <edge id="east" from="east_in" to="center" numLanes="3" speed="13.89"/>
+    <edge id="west" from="west_in" to="center" numLanes="3" speed="13.89"/>
+
+    <!-- Outgoing edges (away from center) -->
+    <edge id="north_out" from="center" to="north_out" numLanes="2" speed="13.89"/>
+    <edge id="south_out" from="center" to="south_out" numLanes="2" speed="13.89"/>
+    <edge id="east_out" from="center" to="east_out" numLanes="2" speed="13.89"/>
+    <edge id="west_out" from="center" to="west_out" numLanes="2" speed="13.89"/>
+</edges>

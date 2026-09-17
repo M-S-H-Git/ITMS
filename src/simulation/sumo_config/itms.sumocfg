@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="intersection.net.xml"/>
+        <route-files value="traffic_routes.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <step-length value="1.0"/>
+    </time>
+    <processing>
+        <lanechange.duration value="1.0"/>
+        <time-to-teleport value="300"/>
+    </processing>
+    <report>
+        <no-step-log value="true"/>
+        <duration-log.disable value="true"/>
+    </report>
+    <gui_only>
+        <start value="true"/>
+    </gui_only>
+</configuration>

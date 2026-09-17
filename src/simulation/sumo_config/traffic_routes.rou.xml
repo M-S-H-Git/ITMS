@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="13.89" color="1,1,1"/>
+    <vType id="emergency" accel="3.5" decel="5.0" sigma="0.3" length="5.0" maxSpeed="20.0" color="1,0,0"/>
+    <vType id="ambulance" accel="3.0" decel="4.5" sigma="0.5" length="5.0" maxSpeed="15.0" color="0,1,0"/>
+
+    <!-- Through routes: straight across the intersection -->
+    <route id="n_to_s" edges="north north_out"/>
+    <route id="s_to_n" edges="south south_out"/>
+    <route id="e_to_w" edges="east west_out"/>
+    <route id="w_to_e" edges="west east_out"/>
+
+    <!-- Left-turn routes -->
+    <route id="n_to_e" edges="north east_out"/>
+    <route id="s_to_w" edges="south west_out"/>
+    <route id="e_to_n" edges="east north_out"/>
+    <route id="w_to_s" edges="west south_out"/>
+
+    <!-- Right-turn routes -->
+    <route id="n_to_w" edges="north west_out"/>
+    <route id="s_to_e" edges="south east_out"/>
+    <route id="e_to_s" edges="east south_out"/>
+    <route id="w_to_n" edges="west north_out"/>
+</routes>
